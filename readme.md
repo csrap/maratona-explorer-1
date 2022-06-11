@@ -1,4 +1,4 @@
-HTML
+## HTML
 HyperText Markup Language
 
 Hiper Texto?
@@ -10,15 +10,15 @@ atributos
 Linguagem
 
 maneira de escrever
-CSS
+## CSS
 Apresentação visual para o cliente
 Estilos para o HTML
 Cascading Style Sheets
 Folha de Estilo em Cascata
-Declaração
+## Declaração
 Seletor
 Propriedade e Valor
-Conceitos
+## Conceitos
 Cascata
 Especificidade
 Box Model
