@@ -1,5 +1,5 @@
 
-const elementoResposta = document.querySelector("#respota")
+const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const buttonPerguntar = document.querySelector('#buttonPerguntar')
 const respostas = [
