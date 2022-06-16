@@ -6,22 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="./index.js" defer=""></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
   <title>Maratona Explorer</title>
 </head>
 
 <body>
+
   <div id="container">
-    <img
-      src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"
-      alt="Image de uma bola de cristal">
     <h1>Vou a revelar seu destino</h1>
     <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-    <input id="inputPergunta" type="text " placeholder="Digite sua pergunta">
-    <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
+    <div class="moon">
+      <span>⭐</span>
+      <input id="inputPergunta" type="text " placeholder="Digite sua pergunta">
+      <span>⭐</span>
+    </div>
+    <br>
+    <span>⭐</span>
 
+    <div class="container-2">
+      <div class="triangle">
+        <ion-icon name="triangle-outline"></ion-icon>
+        <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
+      </div>
 
-    <h3 id="resposta"> </h3>
+      <div>
+        <h3 id="resposta">
+          <span>
+            Revele seu destino
+          </span>
+        </h3>
+      </div>
+
+    </div>
 
   </div>
 </body>
