@@ -27,7 +27,6 @@ const respostas = [
 //clicar em fazer pergunta 
 
 function fazerPergunta() {
-
   if (inputPergunta.value == "") {
     alert("Digite sua pergunta")
     return
@@ -42,7 +41,7 @@ function fazerPergunta() {
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
 
-  elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
+  elementoResposta.innerHTML = respostas[numeroAleatorio]
 
   elementoResposta.style.opacity = 1;
 
