@@ -5,7 +5,6 @@
 
 body {
   background: linear-gradient(30deg, #182C51, #09101E);
-  /* background: #09101E; */
   color: white; 
   text-align: center;
   font-family: sans-serif;
@@ -88,7 +87,6 @@ body {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  /* overflow-y: hidden; */
 }
 
 
@@ -113,9 +111,7 @@ h1 {
   transition: 0.5s;
   pointer-events: none;
   font-family: 'Yatra One', cursive;
-
 }
-
 
 p {
   margin-bottom: 40px;
@@ -132,7 +128,6 @@ input, button {
   font-size: 20px;
   border-radius: 4px;
   color: black; 
-
 }
 
 input {
@@ -144,7 +139,6 @@ input {
     box-shadow: none;
     outline:none;
     border:0;
-
 }
 
 #inputPergunta::placeholder {
@@ -162,7 +156,7 @@ text-align: center;
 }
 
 button {
-  margin-top: -150px;
+  margin-top: -180px;
   border: none; 
   background-color: transparent;
   color: rgb(243, 237, 237); 
@@ -185,11 +179,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;  
-width: 200px;
-height: 230px;
+width: 250px;
+height: 250px;
 margin:30px; 
 box-shadow: 20px 20px 50px rgba(0,0,0,0.5); 
-border-radius: 15px;
+border-radius: 50%;
 background: rgba(185, 182, 182, 0.1); 
 overflow: hidden;
 border-top: 1px solid rgba(255,255,255,0.5);
@@ -199,7 +193,6 @@ color: rgb(246, 241, 241);
 font-family: 'Yatra One', cursive;
 margin-left: 200px;
 padding: 10px;
-/* margin-top: 70px; */
 }
 
 #resposta::before{
@@ -211,10 +204,8 @@ padding: 10px;
   width: 320px;
   height: 320px;
   border-radius: 50%;
-  /* background: #182C51; */
   background: linear-gradient(30deg, #13223f, #0e1a30);
   display: flex;
-  
   flex-direction: column;
   align-content: space-between;
   justify-content: flex-start;
@@ -250,20 +241,20 @@ padding: 10px;
 
 .number {
   position: absolute;
-  top: -40px;
-  right: 10px;
+  top: -10px;
+  right: 35px;
   font-size: 4em;
   color: rgba(255,255,255,0.05);
   pointer-events: none;
 }
 
-.triangle ion-icon
+.circle ion-icon
 {
   font-size: 25vh;
   transition: 0.5s ease-in-out;
 }
 
-.triangle:hover ion-icon
+.circle:hover ion-icon
 {
   filter: drop-shadow(0 0 10px #f1fa8c)
   drop-shadow(0 0 40px #f1fa8c)
@@ -288,6 +279,15 @@ justify-content: space-between;
 align-items: center;
   }
   
+}
+
+@media only screen and (max-width: 375px) {
+  #buttonPerguntar {
+align-items: center;
+margin-left: 10px;
+margin-top: -130px;
+font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
