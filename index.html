@@ -16,17 +16,27 @@
 </head>
 
 <body>
-
   <div id="container">
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+    <span class="starts"></span>
+
     <h1>Vou a revelar seu destino</h1>
     <p>Clique em fazer pergunta para que seu destino seja revelado.</p>
     <div class="moon">
-      <span>⭐</span>
+
       <input id="inputPergunta" type="text " placeholder="Digite sua pergunta">
-      <span>⭐</span>
+
     </div>
     <br>
-    <span>⭐</span>
+
 
     <div class="container-2">
       <div class="triangle">
@@ -34,17 +44,27 @@
         <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
       </div>
 
-      <div>
-        <h3 id="resposta">
+      <div class="start">
+        <h3 id="resposta" class="respostaV">
           <span>
             Revele seu destino
           </span>
+          <p class="number">7</p>
+
         </h3>
       </div>
-
     </div>
-
   </div>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".respostaV"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 1,
+    });
+
+  </script>
 </body>
 
 </html>
